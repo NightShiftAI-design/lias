@@ -1,5 +1,5 @@
 // ============================================
-//  LIA'S CLEANING CO. — script.js
+//  LIAS' CLEANING CO. — script.js
 //  Handles: nav, scroll reveal, FAQ accordion,
 //  contact form (SMS/mailto), booking form (mailto)
 // ============================================
@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const contactForm   = document.getElementById('contactForm');
   const contactStatus = document.getElementById('contactStatus');
   const SMS_NUMBER    = '6156749399'; // Primary contact number
-  const EMAIL_ADDRESS = 'liascleaningco@gmail.com';
+  const EMAIL_ADDRESS = 'info@liascleaningco.org';
 
   contactForm?.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -167,7 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Build message body
     const body = [
-      `Hi Lia's Cleaning! I'd like to get in touch.`,
+      `Hi Lias' Cleaning! I'd like to get in touch.`,
       ``,
       `Name: ${name}`,
       `Phone: ${phone}`,
@@ -185,7 +185,7 @@ document.addEventListener('DOMContentLoaded', () => {
       showStatus(contactStatus, '📱 Opening Messages app with your info pre-filled...', 'success');
     } else {
       // Desktop: open email
-      const subject = encodeURIComponent(`Quote Request – Lia's Cleaning Co.`);
+      const subject = encodeURIComponent(`Quote Request – Lias' Cleaning Co.`);
       const mailtoUri = `mailto:${EMAIL_ADDRESS}?subject=${subject}&body=${encodeURIComponent(body)}`;
       window.open(mailtoUri, '_blank');
       showStatus(contactStatus, '✉️ Opening your email client with your message pre-filled...', 'success');
@@ -248,7 +248,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Build email body
     const divider = '─────────────────────────────────';
     const bodyLines = [
-      `NEW BOOKING REQUEST — Lia's Cleaning Co.`,
+      `NEW BOOKING REQUEST — Lias' Cleaning Co.`,
       divider,
       ...Object.entries(fields).map(([k, v]) => `${k}: ${v}`),
       divider,
