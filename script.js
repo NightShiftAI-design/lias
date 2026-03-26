@@ -1,5 +1,5 @@
 // ============================================
-//  LIAS' CLEANING CO. — script.js
+//  LIAS CLEANING CO. — script.js
 //  Handles: nav, scroll reveal, FAQ accordion,
 //  contact form (SMS/mailto), booking form (mailto)
 // ============================================
