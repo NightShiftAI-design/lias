@@ -167,7 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Build message body
     const body = [
-      `Hi Lias' Cleaning! I'd like to get in touch.`,
+      `Hi Lias Cleaning! I'd like to get in touch.`,
       ``,
       `Name: ${name}`,
       `Phone: ${phone}`,
@@ -248,7 +248,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Build email body
     const divider = '─────────────────────────────────';
     const bodyLines = [
-      `NEW BOOKING REQUEST — Lias' Cleaning Co.`,
+      `NEW BOOKING REQUEST — Lias Cleaning Co.`,
       divider,
       ...Object.entries(fields).map(([k, v]) => `${k}: ${v}`),
       divider,
@@ -257,7 +257,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
     const body = bodyLines.join('\n');
 
-    const subject = encodeURIComponent(`New Booking Request – Lia's Cleaning Co.`);
+    const subject = encodeURIComponent(`New Booking Request – Lias Cleaning Co.`);
     const mailtoUri = `mailto:${EMAIL_ADDRESS}?subject=${subject}&body=${encodeURIComponent(body)}`;
 
     // Open email client
